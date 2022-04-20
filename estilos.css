@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #1B2631;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.fila{
+    display: flex;
+    padding: 81px;
+    gap: 99px;
+}
+
+.fila .columna button{
+    background: linear-gradient(90deg, rgba(77,151,230,1) 0%, rgba(77,151,230,1) 35%,#99e052 100%);
+    width: 90px;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.columna h1{
+    color: white;
+    font-size: 64px;
+    line-height: 70px ;
+    margin-top: -10px;
+}
+
+.columna p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 53px;
+    margin-top: 23px;
+    font-weight: 300;
+}
+
+.columna img{
+    width: 620px;
+    height: 457px;
+}
+
+.columna span{
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav button{
+    width: 90px;
+    height: 50px;
+    background-color: #1B2631;
+    outline: none;
+    color:white;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+nav button::before{
+    content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:10px; 
+  padding:2px; 
+  background:linear-gradient(45deg,#e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
